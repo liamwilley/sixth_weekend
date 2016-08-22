@@ -12,3 +12,46 @@
 # and which belongs in the Entry class.
 #
 # And... test your functionality using RSpec!
+require 'RSpec'
+
+class Thesaurus < Entry
+ 
+  words = []
+  user_input = gets.chomp
+  words << user_input
+  words.each do |word|
+
+
+  def delete
+  words
+  delete_word = gets.chomp
+  
+    words.each do |word|
+      if word == delete_word
+        word.delete
+      end
+
+  end
+
+ 
+
+end
+
+class Entry
+
+attr_accessor :word, :synonyms, :antonyms
+ 
+  def add
+   added_words = []
+   puts "please add a word(s)"
+   added_words << gets.chomp
+  end
+
+end
+
+
+
+
+
+
+
